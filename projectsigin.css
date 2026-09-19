@@ -1,0 +1,335 @@
+/* =========================
+   GENERAL
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    background-image:
+        url("WhatsApp Image 2026-02-10 at 5.42.17 PM.jpeg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+
+    padding: 30px 20px;
+}
+
+
+/* =========================
+   BACKGROUND
+========================= */
+
+.background-overlay {
+    position: fixed;
+    inset: 0;
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(5, 8, 15, 0.92),
+            rgba(10, 15, 25, 0.62),
+            rgba(0, 0, 0, 0.78)
+        );
+
+    z-index: 0;
+}
+
+
+/* =========================
+   PAGE
+========================= */
+
+.page-container {
+    width: 100%;
+    max-width: 430px;
+
+    position: relative;
+    z-index: 1;
+}
+
+
+/* =========================
+   BRAND
+========================= */
+
+.brand {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.brand h1 {
+    color: #d4af37;
+
+    font-size: 42px;
+    font-weight: 700;
+
+    letter-spacing: 1px;
+
+    margin-bottom: 7px;
+
+    text-shadow:
+        0 4px 15px rgba(0, 0, 0, 0.6);
+}
+
+.brand p {
+    color: #e7e7e7;
+
+    font-size: 11px;
+    font-weight: 600;
+
+    letter-spacing: 5px;
+}
+
+
+/* =========================
+   SIGN UP CARD
+========================= */
+
+.signup-box {
+    width: 100%;
+
+    padding: 35px;
+
+    background:
+        rgba(17, 21, 29, 0.88);
+
+    border:
+        1px solid rgba(255, 255, 255, 0.1);
+
+    border-radius: 18px;
+
+    box-shadow:
+        0 25px 60px rgba(0, 0, 0, 0.55);
+
+    backdrop-filter: blur(12px);
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+.form-header {
+    text-align: center;
+    margin-bottom: 27px;
+}
+
+.form-header h2 {
+    color: #ffffff;
+
+    font-size: 27px;
+
+    margin-bottom: 8px;
+}
+
+.form-header p {
+    color: #9da3ae;
+
+    font-size: 13px;
+
+    line-height: 1.5;
+}
+
+
+/* =========================
+   INPUTS
+========================= */
+
+.input-group {
+    margin-bottom: 17px;
+}
+
+.input-group label {
+    display: block;
+
+    color: #d8d8d8;
+
+    font-size: 13px;
+    font-weight: 600;
+
+    margin-bottom: 8px;
+}
+
+.input-group input {
+    width: 100%;
+
+    padding: 13px 14px;
+
+    background:
+        rgba(255, 255, 255, 0.055);
+
+    border:
+        1px solid rgba(255, 255, 255, 0.13);
+
+    border-radius: 8px;
+
+    color: #ffffff;
+
+    font-size: 14px;
+
+    outline: none;
+
+    transition: 0.25s;
+}
+
+.input-group input::placeholder {
+    color: #737984;
+}
+
+.input-group input:hover {
+    border-color:
+        rgba(212, 175, 55, 0.5);
+}
+
+.input-group input:focus {
+    border-color: #d4af37;
+
+    background:
+        rgba(255, 255, 255, 0.08);
+
+    box-shadow:
+        0 0 0 3px
+        rgba(212, 175, 55, 0.12);
+}
+
+
+/* =========================
+   BUTTON
+========================= */
+
+#signup-button {
+    width: 100%;
+
+    padding: 14px;
+
+    margin-top: 8px;
+
+    border: none;
+    border-radius: 8px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #e1c05a,
+            #d4af37,
+            #b68b1f
+        );
+
+    color: #101010;
+
+    font-size: 15px;
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition: 0.25s;
+}
+
+#signup-button:hover {
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 8px 25px
+        rgba(212, 175, 55, 0.28);
+}
+
+#signup-button:active {
+    transform: translateY(0);
+}
+
+
+/* =========================
+   MESSAGE
+========================= */
+
+#msg {
+    min-height: 18px;
+
+    margin-top: 12px;
+
+    text-align: center;
+
+    color: #ff6b6b;
+
+    font-size: 13px;
+}
+
+
+/* =========================
+   LOGIN LINK
+========================= */
+
+.login-section {
+    margin-top: 10px;
+
+    padding-top: 20px;
+
+    border-top:
+        1px solid rgba(255, 255, 255, 0.08);
+
+    text-align: center;
+
+    font-size: 13px;
+}
+
+.login-section span {
+    color: #949aa4;
+}
+
+.login-section a {
+    color: #d4af37;
+
+    margin-left: 5px;
+
+    font-weight: 600;
+
+    text-decoration: none;
+}
+
+.login-section a:hover {
+    text-decoration: underline;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 500px) {
+
+    body {
+        padding: 20px 15px;
+    }
+
+    .brand h1 {
+        font-size: 34px;
+    }
+
+    .brand p {
+        font-size: 9px;
+        letter-spacing: 4px;
+    }
+
+    .signup-box {
+        padding: 28px 22px;
+    }
+
+    .form-header h2 {
+        font-size: 24px;
+    }
+}

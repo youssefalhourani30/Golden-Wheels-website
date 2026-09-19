@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Golden Wheels | Login</title>
+
+    <link rel="stylesheet" href="projectlogin.css">
+</head>
+
+<body>
+
+    <div class="overlay"></div>
+
+    <div class="login-container">
+
+        <div class="brand">
+            <h1>Golden Wheels</h1>
+            <p>Drive Your Dream</p>
+        </div>
+
+        <div id="login">
+
+            <h2>Welcome Back</h2>
+            <p class="subtitle">Sign in to continue to Golden Wheels</p>
+
+            <div class="input-group">
+                <label for="ema">Email or Phone</label>
+                <input
+                    id="ema"
+                    type="text"
+                    placeholder="Enter your email or phone number"
+                >
+            </div>
+
+            <div class="input-group">
+                <label for="pass">Password</label>
+                <input
+                    id="pass"
+                    type="password"
+                    placeholder="Enter your password"
+                >
+            </div>
+
+            <button onclick="login()" id="log">
+                Log In
+            </button>
+
+            <p class="signup">
+                Don't have an account?
+                <a href="projectsigin.html">Create Account</a>
+            </p>
+
+            <p id="msg">Please fill all fields</p>
+
+        </div>
+
+    </div>
+
+    <script type="module" src="projectsigin.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,243 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+
+    min-height: 100vh;
+
+    background-image: url("WhatsApp Image 2026-02-10 at 5.42.17 PM.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+}
+
+/* Dark layer over the background */
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+
+    background: linear-gradient(
+        135deg,
+        rgba(5, 8, 15, 0.85),
+        rgba(10, 15, 25, 0.55)
+    );
+}
+
+/* Main container */
+.login-container {
+    position: relative;
+    z-index: 2;
+
+    width: 100%;
+    max-width: 430px;
+
+    padding: 20px;
+}
+
+/* Golden Wheels logo/title */
+.brand {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.brand h1 {
+    color: #d4af37;
+
+    font-size: 42px;
+    letter-spacing: 2px;
+
+    margin-bottom: 5px;
+
+    text-shadow: 0 3px 15px rgba(0, 0, 0, 0.5);
+}
+
+.brand p {
+    color: #eee;
+
+    font-size: 14px;
+    letter-spacing: 4px;
+
+    text-transform: uppercase;
+}
+
+/* Login card */
+#login {
+    width: 100%;
+
+    padding: 38px 35px;
+
+    background: rgba(20, 24, 32, 0.88);
+
+    border: 1px solid rgba(255, 255, 255, 0.12);
+
+    border-radius: 18px;
+
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.45);
+
+    backdrop-filter: blur(10px);
+}
+
+#login h2 {
+    color: white;
+
+    text-align: center;
+
+    font-size: 28px;
+
+    margin-bottom: 8px;
+}
+
+.subtitle {
+    color: #aaa;
+
+    text-align: center;
+
+    font-size: 14px;
+
+    margin-bottom: 30px;
+}
+
+/* Input groups */
+.input-group {
+    margin-bottom: 18px;
+}
+
+.input-group label {
+    display: block;
+
+    color: #ddd;
+
+    font-size: 14px;
+
+    margin-bottom: 8px;
+}
+
+.input-group input {
+    width: 100%;
+
+    padding: 14px 15px;
+
+    border-radius: 8px;
+
+    border: 1px solid #3c414c;
+
+    background-color: rgba(255, 255, 255, 0.06);
+
+    color: white;
+
+    font-size: 15px;
+
+    outline: none;
+
+    transition: 0.3s;
+}
+
+.input-group input::placeholder {
+    color: #777;
+}
+
+.input-group input:focus {
+    border-color: #d4af37;
+
+    box-shadow: 0 0 0 3px rgba(212, 175, 55, 0.12);
+
+    background-color: rgba(255, 255, 255, 0.09);
+}
+
+/* Login button */
+#log {
+    width: 100%;
+
+    padding: 14px;
+
+    margin-top: 8px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    background: linear-gradient(
+        135deg,
+        #d4af37,
+        #b8962e
+    );
+
+    color: #111;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+#log:hover {
+    transform: translateY(-2px);
+
+    box-shadow: 0 8px 20px rgba(212, 175, 55, 0.25);
+}
+
+/* Signup */
+.signup {
+    color: #aaa;
+
+    text-align: center;
+
+    font-size: 14px;
+
+    margin-top: 25px;
+}
+
+.signup a {
+    color: #d4af37;
+
+    text-decoration: none;
+
+    font-weight: bold;
+}
+
+.signup a:hover {
+    text-decoration: underline;
+}
+
+/* Error message */
+#msg {
+    display: none;
+
+    color: #ff6b6b;
+
+    text-align: center;
+
+    font-size: 14px;
+
+    margin-top: 15px;
+}
+
+/* Mobile */
+@media (max-width: 500px) {
+
+    .login-container {
+        padding: 15px;
+    }
+
+    .brand h1 {
+        font-size: 34px;
+    }
+
+    #login {
+        padding: 30px 22px;
+    }
+}

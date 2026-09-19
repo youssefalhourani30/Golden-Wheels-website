@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Golden Wheels | Sign Up</title>
+
+    <link rel="stylesheet" href="projectsigin.css">
+</head>
+
+<body>
+
+    <div class="background-overlay"></div>
+
+    <main class="page-container">
+
+        <div class="brand">
+            <h1>Golden Wheels</h1>
+            <p>DRIVE YOUR DREAM</p>
+        </div>
+
+        <div class="signup-box">
+
+            <div class="form-header">
+                <h2>Create Account</h2>
+                <p>Join Golden Wheels and discover your next car.</p>
+            </div>
+
+            <div class="input-group">
+                <label for="name">Full Name</label>
+                <input
+                    id="name"
+                    type="text"
+                    placeholder="Enter your full name"
+                >
+            </div>
+
+            <div class="input-group">
+                <label for="email">Email or Phone</label>
+                <input
+                    id="email"
+                    type="text"
+                    placeholder="Enter your email or phone"
+                >
+            </div>
+
+            <div class="input-group">
+                <label for="pass">Password</label>
+                <input
+                    id="pass"
+                    type="password"
+                    placeholder="Create a password"
+                >
+            </div>
+
+            <div class="input-group">
+                <label for="confirm">Confirm Password</label>
+                <input
+                    id="confirm"
+                    type="password"
+                    placeholder="Confirm your password"
+                >
+            </div>
+
+            <button onclick="signup()" id="signup-button">
+                Create Account
+            </button>
+
+            <p id="msg"></p>
+
+            <div class="login-section">
+                <span>Already have an account?</span>
+                <a href="projectlogin.html">Log In</a>
+            </div>
+
+        </div>
+
+    </main>
+
+    <script type="module" src="projectsigin.js"></script>
+
+</body>
+</html>
